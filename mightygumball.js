@@ -1,16 +1,15 @@
 window.onload = function() {
 	var url = "http://localhost:8000/sales.json"
 	var request = new XMLHttpRequest(); 
-	request.open("GET",url);
-	request.onload = function()
+	request.onreadystatechange = function() 
 	{
-		if(request.status == 200)
+		if (request.readyState == 4 && request.status == 200)
 		{
 			updateSales(request.responseText);
-		}		
-		
+		}
 	};
-	request.send("null");
+	request.open("GET",url);
+	request.send(null);
 }
 
 function updateSales(salesItem)
