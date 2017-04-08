@@ -1,0 +1,82 @@
+.color-primary-0 { color: #375673 }	/* Main Primary color */
+.color-primary-1 { color: #8095A8 }
+.color-primary-2 { color: #57718C }
+.color-primary-3 { color: #23415F }
+.color-primary-4 { color: #0E2A44 }
+
+.color-secondary-1-0 { color: #B19A4D }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFF0BD }
+.color-secondary-1-2 { color: #D7C27F }
+.color-secondary-1-3 { color: #927B2E }
+.color-secondary-1-4 { color: #695410 }
+
+.color-secondary-2-0 { color: #B16E4D }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFD3BD }
+.color-secondary-2-2 { color: #D79B7F }
+.color-secondary-2-3 { color: #924E2E }
+.color-secondary-2-4 { color: #692D10 }
+
+body
+{
+	box-sizing: border-box;
+	text-align: center;
+	background-color: (255,255,255,0);	
+	height: 100vh;
+	text-align: center;
+	width: 100vw;
+	margin: 0 auto;
+	margin-top: 0 auto;
+	padding-top: 0;
+	background-image: url("circles-and-roundabouts.png.png");
+	background-repeat: repeat;
+}
+.wrapper
+{
+	background-color: white;
+	border-radius: 5px;
+	text-align: center; 
+	margin: 0 auto;
+	width: 80vw;
+	height: 100vh;
+}
+h1
+{
+	padding-top: 0.5em;
+	text-align: center;
+}
+
+#sales
+{
+	text-align: center;
+	margin: 0 auto;
+	width: 75vw;
+}
+.salesItem
+{
+	border: 1px solid #d9d9d9;
+	padding: 10px;
+}
+
+.salesItem:hover
+{
+	font-size: 130%;
+}
+
+div.salesItem:nth-child(2n+1) {
+	background-color: #f1f1f1;
+}
+
+div.saleItem:first-child {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+div.saleItem:last-child {
+	-webkit-border-bottom-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
